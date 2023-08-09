@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         inicializar();
 
         visualizar_fragmento(fragmentHome);
-        barraNav.setOnItemSelectedListener(elemento -> {
-            int item_id = elemento.getItemId();
+        barraNav.setOnItemSelectedListener(item -> {
+            int item_id = item.getItemId();
             if (item_id == R.id.menuInicio) {
                 visualizar_fragmento(fragmentHome);
             }
